@@ -11,7 +11,9 @@
 	background-color:tan;
 }
 .pawn{
-	background-image: url('images/pawn.jpg');
+	background-image: url('images/pawn.png');
+	background-size: cover;
+	
 	/* Had to rezize the image from the internet to fit into the 50px/50px div
 	for future reference so I dont have to funking figure out that again.*/
 }
