@@ -13,14 +13,17 @@
 .pawn{
 	background-image: url('images/pawn.png');
 	background-size: cover;
-	
+
 	/* Had to rezize the image from the internet to fit into the 50px/50px div
 	for future reference so I dont have to funking figure out that again.*/
 }
+.highlight:hover{
+	background-color: rgb(85, 87, 88);
+}
 
-
-
-
-
-
-/* free vector images */
+/* I tried to add a king class to add its picture but by adding it, it
+took away the pawns too? */
+/* .king{
+	background-image: url('images/king-black.png');
+	background-size: cover;
+} */

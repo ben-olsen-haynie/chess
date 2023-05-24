@@ -18,7 +18,10 @@ for (let i = 0; i < pieces.length; i++) {
     position.classList.add('pawn');
 }
 
-
+// const king = [
+//     rank: 8,
+//     file: 'e'
+// ];
 
 
 // const person = {
