@@ -12,6 +12,36 @@ const pieces = [
         unitType:"pawn"
     },
     {
+        rank: 7,
+        file: 'c',
+        unitType:"pawn"
+    },
+    {
+        rank: 7,
+        file: 'd',
+        unitType:"pawn"
+    },
+    {
+        rank: 7,
+        file: 'e',
+        unitType:"pawn"
+    },
+    {
+        rank: 7,
+        file: 'f',
+        unitType:"pawn"
+    },
+    {
+        rank: 7,
+        file: 'g',
+        unitType:"pawn"
+    },
+    {
+        rank: 7,
+        file: 'h',
+        unitType:"pawn"
+    },
+    {
         rank: 8,
         file: 'e',
         unitType:"king"
@@ -24,14 +54,6 @@ for (let i = 0; i < pieces.length; i++) {
     const position = document.querySelector(selector);
     position.classList.add(piece.unitType);
 }
-// I tried to add a king class to add its picture but by adding it, it
-// took away the pawns too?
-const king = [
-    {
-    rank: 8,
-    file: 'e'
-    }
-];
 
 
 // const person = {
