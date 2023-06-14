@@ -55,19 +55,13 @@ for (let i = 0; i < pieces.length; i++) {
     position.classList.add(piece.unitType);
 }
 
+document.addEventListener(
+    "click",
+    (event) => {
+        // console.log(event)
+        // console.log(event.srcElement)
 
-// const person = {
-//     name: 'dean',
-//     age: 26,
-//     sayHello: function() {
-//         console.log(`Hi, my name is ${this.name}`);
-//         console.log(`... and I am ${this.age} years old.`);
-//     }
-// }
-
-// console.log(person.sayHello())
-
-
-// function someFunction() {
-//     // do something
-// }
+        // Challenge: if this click was on a piece, then console.log "this is a piece!"
+        // WE SHALL RETURN!!!!! (mcArthur ref bee tee dubbs)
+    }
+);
