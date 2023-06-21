@@ -74,9 +74,97 @@ function werePracticingHere() {
     console.log(myArray[2].name)
     console.log(myArray[3][2])
 
+    // the way to dig values out of objects is (usually) with the dot operator (.)
+    // the way to dig values of of arrays is (usually) with bracket notation e.g. []
+
+    // Challenge 5.0: declare a variable named `animals`
+    // make the value of that variable an array which has 5 strings.
+    // each string should be the name of a different animal
+
+    const animals = ["cat", "dog", "aligator", "monkey", "shark"]
+    console.log(animals[0])
+
+    // Challenge 5.1: use a loop to iterate over the array `animals`
+    // I want you to console.log() each individual element in the array.
+    
+    for (let i = 0; i <= 4; i++) {
+        console.log(animals[i])
+    }
+
+    // Challenge 5.1: Arrays have a method called .push()
+    // when you use .push() on an array it adds an element to the end
+    // ex: animals.push('tiger')
+    // I want you to add an element to the array using the .push() method
+    // and then I want you to loop over the array and print each element out again.
+    
+    animals.push("parrot")
+    for (let i = 0; i < 6; i++) {
+        console.log(animals[i])
+    }
+
+    // Challenge 5.2: Arrays have a property called .length
+    // I want you to console.log the length of the `animals` array
+
+    console.log(animals.length)
+
+    // Challenge 5.3: Now I want you to loop over the elements of the array
+    // use the `.lenghth` property instead of hard-coding 6
+
+    for (let i = 0; i < animals.length; i++) {
+        console.log(animals[i])
+    }
+
+    // Challenge 5.4: Now do the same thing, but skip the first element (cat)
+
+    for (let i = 1; i < animals.length; i++) {
+        console.log(animals[i])
+    }
+
+    // Challenge 5.5: Now loop through the whole array
+    // But this time, loop through it backwards starting at parrot
+    // and ending at cat
+
+    for (let i = 5; i >= 0; i--) {
+        console.log(animals[i])
+    }
+
+    // Challenge 5.6: Now do the same thing
+    // This time use the `.length` property
+    // instead of hard-coding 5
+
+    for (let i = animals.length - 1; i >= 0; i--) {
+        console.log(animals[i])
+    }
+
+    // Challenge 6.0: create a new array named `colors`
+    // fill the array with 5 strings - each the name of a color
+    // console.log it.
+
+    const colors = ["red", "blue", "green", "yellow", "orange"]
+    console.log(colors)
+
+    // Challenge 6.1: I want you to iterate over the `colors` array
+    // log each element
+    // but this time, use a `while` loop instead of a `for` loop.$
+
+    let i = 0;
+    while (i < 5) {
+        console.log(colors[i]);
+        i++;
+    }
+    
+
+    // Challenge 6.2: Do the same thing, but in reverse order
+
+    i = colors.length - 1
+
+    while (i >= 0) {
+        console.log(colors[i]);
+        i--;
+    }
+
 }
 // Actually call the function defined above ^^
 werePracticingHere()
-
 
 
