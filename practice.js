@@ -163,8 +163,66 @@ function werePracticingHere() {
         i--;
     }
 
+    // Challenge 7.0: Create a variable named `instruments`.
+    // Assign an array to that variable, and fill it with 3 strings.
+    // Each string should be the name of a musical instrument
+
+    const instruments = ['piano', 'guitar', 'drums']
+    console.log(instruments)
+
+    // Challenge 7.1: using a for...of array, iterate over each element
+    // in `instruments` and colnsole log them.
+
+    for (let instrument of instruments) {
+        console.log(instrument)
+    }
+
+    // Challenge 8.0: create a variable named `people`
+    // Assign value of `people` to be an empty array
+    // Then, using the array `.push()` method, add 3 people to the array.
+    // each person (or element in the array) should be an object with 2 properties
+    // - `name` which should be a string
+    // - `age` which should be an integer
+    
+    const people = []
+    const person1 = {
+        name: 'Ben',
+        age: 20,
+    }
+    const person2 = {
+        name: 'Jay',
+        age: 22,
+    }
+    const person3 = {
+        name: 'Josh',
+        age: 24,
+    }
+
+    people.push(person1, person2, person3)
+    console.log(people)
+
+    // Challenge 8.1: in a single statement add another person to `people`
+    // Use the `.push()` array method again
+
+    people.push({name: 'carson', age: 26})
+
+    // Challenge 8.2:
+    let allPeopleAreAdults = false
+    allPeopleAreAdults = people.every((person) => {
+        return person.age >= 18
+    })
+
+    console.log(allPeopleAreAdults)
+
+    const allPeopleAre21 = people.every((arrayElm) => {
+        return arrayElm.age >= 21
+    })
+
+    people.forEach((person) => {
+        console.log(person.name)
+    })
 }
-// Actually call the function defined above ^^
+// Actually call the function defined above ^^ 
 werePracticingHere()
 
 
